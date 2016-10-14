@@ -1,0 +1,8 @@
+extends ../../layout.jade
+block contenido
+	.container
+		h1 #{imagen.title}
+		if(typeof imagen.creator != "undefined") 
+			p Por #{imagen.creator.email}
+	.col-md-10.block-center.img-show
+		img(class="img-responsive" src="/public/imagenes/#{imagen._id}.#{imagen.extension}")

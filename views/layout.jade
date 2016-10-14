@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title FotoFH-Solution
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+	link(href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet")
+	link(rel="stylesheet" href="../../../public/css/app.css")
+	script.
+		$(function() {
+			$('#toggle-two').bootstrapToggle({
+					on: 'Masculino',
+					off: 'Femenino',
+					on = Masculino,
+					off= Femenino
+			});
+		})
+
+body
+	nav(class="large-padding black white-text")
+		ul
+			li 
+				a(href="/app") Inicio
+			li 
+				a(href="/app/imagenes/new") Subir Imagen
+			li 
+				a(href="/app/imagenes") Mis Imagenes
+					
+	block contenido
+
+
+	script(src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+	script(src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js")
+	script(src="../../../public/js/app.js")

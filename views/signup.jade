@@ -1,0 +1,36 @@
+extends ./layout.jade
+block contenido
+	div(class="col-md-6 remove-float center-block big-top-space")
+		form(action="/users" method="POST" class="form")
+			div(class="form-group")
+				label(for="email") Email: 
+				input(type="text" name="email" placeholder="Email" id="email" class="form-control")
+			div(class="form-group")
+				label(for="username") Nombre de Usuario:
+				input(type="text" name="username" placeholder="Nombre de Usuario" class="form-control")
+			div(class="form-group")
+				label(for="name") Nombre:
+				input(type="text" name="name" placeholder="Nombre" class="form-control")
+			div(class="form-group")
+				label(for="lastname") Segundo Nombre:
+				input(type="text" name="lastname" placeholder="Segundo Nombre" class="form-control")
+			div(class="form-group")
+				label(for="age") Edad:
+				input(type="number" name="age" placeholder="Edad" class="form-control")
+			div(class="form-group")
+				label(for="date_of_birth") Fecha de Nacimiento:
+				input(type="date" name="date_of_birth" placeholder="Fecha de Nacimiento" class="form-control")
+			div(class="form-group")
+				label(for="sex") Sexo:
+				input(type="checkbox" name="sex" checked data-toggle="toggle" class="form-control")
+			div(class="form-group")
+				label(for="password") Contraseña:  
+				input(type="password" name="password" placeholder="Contraseña" id="password" class="form-control")
+			div(class="form-group")
+				label(for="password") Confirma tu Contraseña:  
+				input(type="password" name="password_confirmation" placeholder="Confirma tu Contraseña" id="password" class="form-control")
+			div(class="col-xs-12 col-md-6")
+					div(class="form-group")
+						input(type="submit" value="Iniciar Sesion" class="btn btn-info")
+				div(class="col-xs-12 col-md-6 text-right")
+					a(href="/login") Ya tengo cuenta
